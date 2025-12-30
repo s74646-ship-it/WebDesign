@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samsung Store</title>
+    <link rel="stylesheet" href="Lab7_project.css">
+</head>
+<body>
+    <!-- Side Nav -->
+    <nav class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#login">Login</a>
+        <a href="#slides">Slides</a>
+        <a href="#profile">Profile</a>
+        <a href="#shop">Shop</a>
+        <a href="#progress">Progress</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <main>
+        <!-- 1. Transparent Image Text -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Samsung Store</h1>
+                <p>Innovation for Tomorrow</p>
+                <a href="#shop" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- 2. Form on Image -->
+        <section id="login" class="form-section">
+            <form class="login-form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Login</button>
+            </form>
+        </section>
+
+        <!-- 4. Slideshow -->
+        <section id="slides" class="slideshow">
+            <img class="slide active" src="./image/slide1.jpeg">
+            <img class="slide" src="./image/slide2.jpeg">
+            <img class="slide" src="./image/slide3.jpeg">
+        </section>
+
+        <!-- 5. Profile Card -->
+        <section id="profile" class="profile">
+            <div class="card">
+                <img src="./image/WAN_8009 -35x45mm.jpg">
+                <h3>Flora Tang</h3>
+                <p>Web Design Student</p>
+                <div class="icons">🌐 📘 📸</div>
+            </div>
+        </section>
+
+        <!-- 6. Progress Bar -->
+        <section id="progress" class="progress-section">
+            <h2>Loading Progress</h2>
+            <div class="progress-bar"><div id="progress"></div></div>
+            <p id="progress-text">0%</p>
+        </section>
+
+        <!-- Shop -->
+        <section id="shop" class="shop">
+            <h2>Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="./image/product1.jpeg">
+                    <h3>S24</h3>
+                    <p>RM 4,299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="./image/product2.jpeg">
+                    <h3>Watch</h3>
+                    <p>RM 1,299</p>
+                    <button>Add to Cart</button></div>
+                <div class="product">
+                    <img src="./image/product3.jpeg">
+                    <h3>Buds</h3>
+                    <p>RM 799</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="./image/product4.jpeg">
+                    <h3>Tablet</h3>
+                    <p>RM 2,599</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Collapsible FAQ -->
+        <section id="faq" class="faq">
+            <h2>FAQ</h2>
+            <button onclick="toggleFAQ()">Show FAQ</button>
+            <div id="faq-content"><p>✔ Free Shipping<br>✔ 1 Year Warranty<br>✔ 24/7 Support</p></div>
+        </section>
+    </main>
+
+    <script src="Lab7_project.js"></script>
+</body>
+</html>
